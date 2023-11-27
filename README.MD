@@ -8,7 +8,7 @@
 
 2. **progressbarWidth Calculation Executed Unconditionally:**
 
-- The calculation for progressbarWidth is executed even when product data is not available, leading to unnecessary computations.
+   - The calculation for progressbarWidth is executed even when product data is not available, leading to unnecessary computations.
 
 3. **Direct Calling of progressbarWidth Calculation Function:**
    - The progressbarWidth calculation function is directly called within JSX, which can impact performance and readability.
