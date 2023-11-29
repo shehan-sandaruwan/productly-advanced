@@ -6,7 +6,6 @@ import App from "../App";
 
 describe("Account area feature", () => {
   test("redirects to login page when token is not available on products page", async () => {
-    // Mock a scenario where token is not available
     render(
       <MemoryRouter initialEntries={["/products"]}>
         <App />
@@ -21,7 +20,7 @@ describe("Account area feature", () => {
   });
 
   test("if token is available component should be rendered ", async () => {
-    // Mock the fetchData function
+    // Set token
     localStorage.setItem("productly", "abcd");
 
     render(
