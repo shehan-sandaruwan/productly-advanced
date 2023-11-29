@@ -28,7 +28,8 @@ const AccountArea = () => {
   }, [navigate]);
 
   const progressBarWidth = useMemo(() => {
-    if (products.length) return (products.length / MAX_PRODUCT_COUNT) * 100;
+    if (products.length && products.length > MAX_PRODUCT_COUNT)
+      return (products.length / MAX_PRODUCT_COUNT) * 100;
 
     return 0;
   }, [products]);
